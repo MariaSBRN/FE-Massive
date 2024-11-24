@@ -1,0 +1,71 @@
+.rentalSteps {
+  padding: 50px 80px;
+}
+
+.stepsTitle {
+  color: #033a17;
+  text-align: center;
+  font: 600 64px/1 Inter, sans-serif;
+  margin-bottom: 50px;
+}
+
+.stepsContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.stepsContent {
+  width: 60%;
+}
+
+.step {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 67px;
+}
+.stepIcon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.stepInfo {
+  flex: 1;
+}
+
+.stepTitle {
+  color: #404a3d;
+  font: 500 26px/1 Signika, sans-serif;
+  margin-bottom: 16px;
+}
+
+.stepDescription {
+  color: #666;
+  font: 400 16px/26px Roboto, sans-serif;
+}
+
+.stepsImage {
+  width: 40%;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .rentalSteps {
+    padding: 40px 20px;
+  }
+
+  .stepsTitle {
+    font-size: 40px;
+  }
+
+  .stepsContainer {
+    flex-direction: column;
+  }
+
+  .stepsContent,
+  .stepsImage {
+    width: 100%;
+  }
+}

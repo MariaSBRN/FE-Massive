@@ -1,0 +1,103 @@
+.toolsSection {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #033a17;
+  background-image: url("../../assets/toolsbg.png");
+}
+
+.sectionTitle {
+  color: #fff;
+  letter-spacing: -0.96px;
+  text-align: center;
+  align-self: center;
+  margin-left: 13px;
+  font: 700 48px "Poppins", sans-serif;
+  margin-top: 150px;
+}
+
+.toolsContainer {
+  display: flex;
+  min-height: 287px;
+  align-items: center;
+  gap: 23px;
+  overflow: hidden;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: 61px 0 0 38px;
+  padding: 0 8px;
+  justify-content: center;
+}
+
+.footerContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1463px;
+  gap: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 24px 21px 0 0;
+  margin-left: 200px;
+  margin-bottom: 100px;
+}
+
+.freeService {
+  display: flex;
+  color: #0d3c00;
+  letter-spacing: -0.4px;
+  font: 700 20px Poppins, sans-serif;
+}
+
+.serviceIcon {
+  aspect-ratio: 1.01;
+  object-fit: contain;
+  object-position: center;
+  width: 91px;
+}
+
+.serviceText {
+  border-radius: 24px;
+  background-color: #fff;
+  align-self: start;
+  margin-top: 33px;
+  flex-grow: 1;
+  width: fit-content;
+  padding: 6px 58px 20px;
+}
+
+.viewMoreButton {
+  border-radius: 6px;
+  background-color: #fff;
+  color: #033a17;
+  letter-spacing: -0.22px;
+  margin: auto 0;
+  padding: 9px 11px;
+  font: 600 11px Instrument Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .toolsSection {
+    max-width: 100%;
+  }
+
+  .sectionTitle {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .toolsContainer {
+    margin-top: 40px;
+  }
+
+  .footerContainer {
+    max-width: 100%;
+    margin-right: 10px;
+  }
+
+  .serviceText {
+    padding: 6px 20px 20px;
+  }
+}

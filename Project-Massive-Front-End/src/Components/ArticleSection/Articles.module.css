@@ -1,0 +1,19 @@
+.articlesSection {
+  padding: 20px;
+  background-color: #f8f7f0;
+  text-align: center;
+}
+
+.heading {
+  font-size: 35px;
+  color: #2b5d2e;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.articlesContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

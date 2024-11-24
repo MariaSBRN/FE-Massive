@@ -1,0 +1,54 @@
+.articleContent {
+  background-color: #033a17;
+  border-radius: 1.125rem;
+  padding: 1.5rem;
+  margin-top: 3.438rem;
+}
+
+.articleSection {
+  background-color: #fff;
+  border-radius: 1.125rem;
+  padding: 5.875rem 3.563rem;
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.938rem;
+}
+
+.articleSection:last-child {
+  margin-bottom: 0;
+}
+
+.articleImage {
+  width: 43%;
+  border-radius: 0.188rem;
+  object-fit: cover;
+}
+
+.articleText {
+  width: 57%;
+  color: #030303;
+  font: 500 1rem/1.313rem "Poppins", sans-serif;
+  letter-spacing: 0.005rem;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .articleContent {
+    margin-top: 2.5rem;
+    padding: 1.25rem;
+  }
+
+  .articleSection {
+    flex-direction: column;
+    padding: 2rem 1.25rem;
+  }
+
+  .articleImage,
+  .articleText {
+    width: 100%;
+  }
+
+  .articleImage {
+    margin-bottom: 1.25rem;
+  }
+}

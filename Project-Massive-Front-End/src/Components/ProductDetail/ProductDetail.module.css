@@ -1,0 +1,171 @@
+.productDetail {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 2rem;
+  padding: 0 5rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.productInfo {
+  display: flex;
+  gap: 1.25rem;
+  background-color: #08692b;
+  border-radius: 2.125rem;
+  padding: 1rem;
+  flex: 2;
+  align-items: center;
+}
+
+.productImage {
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 1.0625rem;
+  width: 10rem;
+  margin-right: 20px;
+}
+
+.productDescription {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 2.125rem;
+  padding: 0.6875rem 1.25rem;
+  flex: 1;
+}
+
+.productText {
+  flex: 1;
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.productName {
+  color: #000;
+  font: 700 1.5rem "Times New Roman", serif;
+}
+
+.productUse {
+  color: #000;
+  font: 400 1rem "Times New Roman", serif;
+  margin-top: 0.25rem;
+}
+
+.productStock {
+  color: #867d7d;
+  font: 400 1rem "Times New Roman", serif;
+  margin-bottom: 1rem;
+}
+
+.quantitySelector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantityButton {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font: 400 1.25rem "Times New Roman", serif;
+  padding: 0.125rem 0.4375rem;
+}
+
+.quantity {
+  background-color: #08692b;
+  color: #fff;
+  font: 400 1.25rem "Times New Roman", serif;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.quantityLabel {
+  color: #c9c9c9;
+  font: "Poppins";
+  margin-top: 0.5rem;
+  margin-left: 50px;
+}
+
+.dateInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.dateLabel {
+  margin-left: 0.5rem;
+  color: #c9c9c9;
+  font: "Poppins";
+}
+.dateInputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.dateInput {
+  background-color: #000; /* Warna latar belakang */
+  border: none; /* Menghapus border */
+  color: #fff; /* Warna teks */
+  font: 400 0.8rem "Times New Roman", serif; /* Font sama dengan elemen lain */
+  padding: 0.5rem; /* Padding konsisten dengan elemen lain */
+  border-radius: 4px; /* Radius konsisten */
+  width: 10rem; /* Lebar disesuaikan agar konsisten */
+  height: 2.5rem; /* Tinggi yang sama dengan tombol atau input lainnya */
+}
+
+.orderSummary {
+  border-radius: 1rem;
+  color: #000;
+  padding: 1.5rem;
+  width: 20rem;
+  border: 2px solid #08692b;
+  margin-bottom: 20px;
+}
+
+.summaryTitle {
+  font: 600 1rem Poppins, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.summaryList {
+  font: 400 0.9rem Poppins, sans-serif;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.totalItems {
+  font: 400 0.9rem Poppins, sans-serif;
+  margin-top: 1rem;
+}
+
+.borrowButton {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  font: 700 1rem "Poppins", serif;
+  padding: 0.5rem 0;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media (max-width: 991px) {
+  .productDetail {
+    flex-direction: column;
+    padding: 0 1.25rem;
+  }
+
+  .orderSummary {
+    width: 100%;
+  }
+}

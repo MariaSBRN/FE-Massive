@@ -1,0 +1,22 @@
+.informationPage {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 99.1vw; /* Ensure full viewport width */
+  margin: 0;
+  padding: 0;
+}
+
+.mainContent {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 70px;
+}
+@media (max-width: 991px) {
+  .mainContent {
+    padding: 0 20px;
+  }
+}

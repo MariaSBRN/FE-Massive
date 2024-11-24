@@ -1,0 +1,137 @@
+/* PupukCard */
+.fertilizerCard {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  position: relative; /* Tambahkan ini untuk rankBadge */
+}
+
+.cardContent {
+  display: flex;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+
+.rankBadge {
+  display: flex;
+  align-items: center;
+  background-color: rgba(3, 58, 23, 1);
+  border-radius: 0 0 8px 8px;
+  padding: 0.5rem 1rem;
+  color: var(--white);
+  position: absolute; /* Tambahkan ini */
+  top: 0; /* Letakkan di sudut kiri atas */
+  left: 0; /* Tetap di kiri */
+}
+
+.rankNumber {
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.25rem;
+}
+
+.newBadge {
+  font-weight: 500;
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: 1px solid var(--white);
+}
+
+.productImage {
+  width: 177px;
+  height: auto;
+  object-fit: contain;
+}
+
+.productInfo {
+  flex: 1;
+}
+
+.productName {
+  color: rgba(3, 58, 23, 1);
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.productDetails {
+  color: var(--carbon-800);
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.actionSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  min-width: 18vw;
+}
+
+.divider {
+  width: 1px;
+  height: 200px;
+  background-color: rgba(184, 184, 184, 1);
+  margin-right: 1.5rem;
+}
+
+.actionButton {
+  padding: 0.75rem 3.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.actionButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.availableButton {
+  background-color: rgba(3, 58, 23, 1);
+  color: var(--white);
+  min-width: 235px;
+}
+
+.availableButton:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.takenButton {
+  background-color: rgba(255, 145, 32, 1);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .cardContent {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .productImage {
+    width: 140px;
+  }
+
+  .actionSection {
+    padding: 1rem;
+  }
+
+  .divider {
+    height: 1px;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .actionButton {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+}

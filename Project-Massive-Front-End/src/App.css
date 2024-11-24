@@ -1,0 +1,116 @@
+/* App.css */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/image40.png"); /* Tambahkan URL gambar jika diperlukan */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Membuat background tetap */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.login-box {
+  padding: 40px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 12px; /* Mengatur rounded sesuai permintaan */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-label {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px; /* Sedikit lebih kecil agar tidak terlalu rounded */
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #cccccc;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #002603; /* Hijau gelap */
+  color: white;
+  border: none;
+  margin-top: 20px; /* Mengatur jarak dari input */
+  border-radius: 25px; /* Membuat tombol menjadi rounded */
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #002603; /* Warna hijau lebih gelap saat hover */
+}
+
+.checkbox-wrapper {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.checkbox-label {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #888;
+}
+
+#rememberMe {
+  background-color: #888888;
+}

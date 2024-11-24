@@ -1,0 +1,58 @@
+.productSection {
+  padding: 60px 36px;
+  margin-top: 0px;
+  width: 99.1vw;
+  position: relative;
+}
+
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 40px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pageButton {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+}
+
+.pageButton1 {
+  padding: 8px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
+
+.pageButton.active {
+  background-color: #ff9120;
+  color: white;
+}
+
+.pageButton:hover {
+  background-color: #ddd;
+}
+
+.pageButton:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.pageButton1:disabled {
+  color: #ddd;
+  cursor: not-allowed;
+}

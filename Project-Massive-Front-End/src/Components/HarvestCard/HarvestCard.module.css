@@ -1,0 +1,47 @@
+.card {
+  border-radius: 24px;
+  box-shadow: 0 4px 4px rgb(191, 196, 193);
+  padding: 7px 33px 14px;
+  border: 1px solid #c1c1c1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: 20px;
+  aspect-ratio: 1.39;
+  object-fit: cover;
+}
+
+.cardTitle {
+  color: #033a17;
+  font: 600 20px Poppins, sans-serif;
+  margin: 15px 0;
+}
+
+.cardDetails {
+  color: #363636;
+  font: 600 16px/19px Poppins, sans-serif;
+  margin-bottom: 26px;
+}
+
+.cardDate {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #7e7e7e;
+  font: 400 17px Poppins, sans-serif;
+}
+
+.dateIcon {
+  width: 21px;
+  height: 21px;
+}
+
+@media (max-width: 991px) {
+  .card {
+    padding: 7px 20px 14px;
+  }
+}

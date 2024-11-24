@@ -1,0 +1,43 @@
+.productCard {
+  background-color: #fff;
+  border-radius: 13px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  padding: 14px 13px;
+  text-align: center;
+  width: 216px;
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.productName {
+  font: 600 16px "Poppins", sans-serif;
+  margin-top: 6px;
+  color: black;
+}
+
+.productStock {
+  font: 600 11px "Poppins", sans-serif;
+  margin-top: 6px;
+  color: black;
+}
+
+.borrowButton {
+  background-color: #72bf4e;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 18px;
+  font: 600 11px "Instrument Sans", sans-serif;
+  cursor: pointer;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}

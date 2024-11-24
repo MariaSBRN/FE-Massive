@@ -1,0 +1,191 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 50px;
+  background-color: transparent;
+  z-index: 998; /* Nilai tinggi agar berada di depan elemen lain */
+  top: 0;
+}
+
+.header.scrolled {
+  background-color: #033a17; /* Warna hijau saat di-scroll */
+}
+
+.logo {
+  width: 126px;
+  aspect-ratio: 1.36;
+  object-fit: contain;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.navLink {
+  color: #fff;
+  font: 600 20px "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.activeLink {
+  color: #ff9120; /* Warna kuning */
+  font-weight: 700;
+}
+
+.navLink:first-child {
+  font-weight: 700;
+}
+
+.dropdownContainer {
+  position: relative; /* Pastikan posisi relatif untuk referensi submenu */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.dropdownIcon {
+  width: 17px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  color: #fff;
+}
+
+.profileIcon {
+  width: 19px;
+  aspect-ratio: 0.9;
+  object-fit: contain;
+  color: #fff;
+}
+/* Untuk dropdown menu */
+.dropdownMenu {
+  position: absolute;
+  background-color: #033a17;
+  display: none;
+  flex-direction: column;
+  top: 100%;
+  left: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 170px;
+  border-radius: 20px; /* Membuat sudut membulat */
+  overflow: hidden; /* Pastikan isi tidak melampaui radius */
+}
+
+.dropdownContainer:hover .dropdownMenu {
+  display: flex;
+}
+
+.dropdownItem {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font: 400 16px "Poppins", sans-serif;
+}
+
+.dropdownItem:hover {
+  background-color: #ff9120;
+  color: #033a17;
+}
+
+.dropdownMenu a:not(:last-child) {
+  border-bottom: 1px solid #ccc; /* Warna garis pembatas */
+}
+
+/* Untuk dropdown profil */
+.profileContainer {
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  font: 600 16px "Poppins", sans-serif;
+}
+
+.profileDropdown {
+  position: absolute;
+  background-color: #033a17;
+  display: none;
+  flex-direction: column;
+  top: 100%;
+  right: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 170px;
+  border-radius: 20px; /* Membuat sudut membulat */
+  overflow: hidden; /* Pastikan isi tidak melampaui radius */
+}
+
+.profileDropdown a:not(:last-child) {
+  border-bottom: 1px solid #ccc; /* Warna garis pembatas */
+}
+
+.profileContainer:hover .profileDropdown {
+  display: flex;
+}
+
+.profileItem {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.profileItem:hover {
+  background-color: #ff9120;
+  color: #033a17;
+}
+
+.activeDropdownItem {
+  background-color: #ff9120; /* Warna kuning */
+  color: #033a17; /* Warna teks kontras */
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+
+  .navigation {
+    display: none; /* Sembunyikan navigasi awalnya */
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+    background-color: #033a17;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    z-index: 999;
+  }
+
+  .navigation.show {
+    display: flex; /* Tampilkan navigasi saat burger menu aktif */
+  }
+
+  .burgerButton {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .burgerLine {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+  }
+
+  .logo {
+    width: 100px; /* Sesuaikan ukuran logo */
+  }
+
+  .dropdownMenu {
+    position: relative; /* Agar dropdown tetap rapi dalam menu responsif */
+  }
+}

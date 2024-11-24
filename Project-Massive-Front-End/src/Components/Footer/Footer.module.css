@@ -1,0 +1,79 @@
+.footer {
+  background-color: #002603;
+  color: #fafafa;
+  padding-top: 87px;
+  position: relative;
+  width: 100%;
+  bottom: 0; /* Tempelkan di bagian bawah */
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.footerSection {
+  max-width: 50px;
+  margin-bottom: 20px;
+}
+
+.footerTitle {
+  font: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLink {
+  color: #fafafa;
+  text-decoration: none;
+  font: 400 17px Inter, sans-serif;
+  margin-bottom: 5px;
+}
+
+.footerInfo {
+  max-width: 200px;
+}
+
+.footerLogo {
+  width: 265px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footerDescription {
+  font: "Poppins";
+}
+
+.footerBottom {
+  background-color: #002603;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.copyright {
+  font: 300 14px "Poppins";
+}
+
+.footerImage {
+  right: 81px;
+  width: 295px;
+}
+
+@media (max-width: 991px) {
+  .footerContent {
+    padding: 0 20px;
+  }
+
+  .footerImage {
+    right: 10px;
+    width: 200px;
+  }
+}

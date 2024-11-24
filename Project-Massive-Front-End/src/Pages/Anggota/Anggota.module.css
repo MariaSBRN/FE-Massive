@@ -1,0 +1,184 @@
+.harvestContainer {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-image: url("../../assets/HarvestBackground.png");
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px 70px;
+  background: rgba(155, 155, 155, 0.5);
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 126px;
+  height: auto;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.heroSection {
+  position: relative;
+  min-height: 525px;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 90%;
+}
+
+.heroTitle {
+  color: #033a17;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font: 700 48px Inter, sans-serif;
+  position: relative;
+  z-index: 1;
+  padding: 42px 20px;
+}
+
+.filterSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.dateFilter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  color: #64748b;
+  font: 500 14px Poppins, sans-serif;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 22px;
+  border: 1px solid #bababa;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 4px 4px rgba(3, 58, 23, 0.8);
+}
+
+.searchField {
+  border: none;
+  outline: none;
+  background: transparent;
+  font: 500 13px Poppins, sans-serif;
+  color: #033a17;
+}
+
+.harvestGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 200px;
+  padding: 0 80px;
+  margin-top: 40px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pageButton {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.pageButton1 {
+  padding: 8px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.pageButton.active {
+  background-color: #033a17;
+  color: #fff;
+}
+
+.pageButton:hover {
+  background-color: #ccc;
+}
+
+.pageButton:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.pageButton1:disabled {
+  color: #ddd;
+  cursor: not-allowed;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 991px) {
+  .harvestContainer {
+    padding-bottom: 100px;
+  }
+
+  .header {
+    padding: 19px 20px;
+  }
+
+  .heroTitle {
+    font-size: 40px;
+  }
+
+  .filterSection {
+    padding: 20px;
+  }
+
+  .harvestGrid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}

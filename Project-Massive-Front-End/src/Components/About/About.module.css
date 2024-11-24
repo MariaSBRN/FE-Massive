@@ -1,0 +1,81 @@
+.aboutUs {
+  display: flex;
+  gap: 20px;
+  padding: 107px 80px;
+}
+
+.aboutImage {
+  width: 50%;
+  aspect-ratio: 1.17;
+  object-fit: cover;
+}
+
+.aboutContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerAccent {
+  width: 3px;
+  height: 28px;
+  background-color: #033a17;
+}
+
+.aboutTitle {
+  color: #ff8100;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Inter, sans-serif;
+}
+
+.aboutDescription {
+  display: flex;
+  gap: 16px;
+  margin-top: 11px;
+}
+
+.descriptionAccent {
+  width: 3px;
+  height: 309px;
+  background-color: #033a17;
+}
+
+.groupName {
+  color: #0d3c00;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.96px;
+  font-family: Inter, sans-serif;
+  margin-bottom: 20px;
+}
+
+.groupDescription {
+  color: #363636;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.48px;
+  font-family: Inter, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .aboutUs {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .aboutImage,
+  .aboutContent {
+    width: 100%;
+  }
+
+  .groupName {
+    font-size: 40px;
+  }
+}

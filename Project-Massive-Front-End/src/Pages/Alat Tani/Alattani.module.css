@@ -1,0 +1,37 @@
+.alatTaniPage {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.mainTitle {
+  color: #000;
+  text-align: center;
+  font: 500 45px "Poppins", sans-serif;
+  margin-top: 70px;
+}
+
+.mainDescription {
+  color: #000;
+  text-align: center;
+  font: 400 20px "Poppins", sans-serif;
+  margin-top: 23px;
+}
+
+@media (max-width: 991px) {
+  .mainContent {
+    padding: 0 20px 100px;
+  }
+
+  .mainTitle {
+    font-size: 40px;
+  }
+
+  .mainDescription {
+    max-width: 100%;
+  }
+}
